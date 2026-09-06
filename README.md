@@ -2,7 +2,14 @@
 
 Премиальный интернет-магазин вина и крепких напитков с полным циклом покупки: каталог, корзина, оформление заказа и программа лояльности.
 
-**Сайт:** [https://appleairpods.github.io/crm_finewine/](https://appleairpods.github.io/crm_finewine/)
+## Публикация на GitHub Pages
+
+1. Откройте [Settings → Pages](https://github.com/appleairpods/crm_finewine/settings/pages)
+2. В разделе **Build and deployment** выберите Source: **Deploy from a branch**
+3. Branch: **gh-pages** → папка **/ (root)** → Save
+4. После push в `main` GitHub Actions автоматически соберёт и опубликует сайт
+
+**URL:** [https://appleairpods.github.io/crm_finewine/](https://appleairpods.github.io/crm_finewine/)
 
 ## Возможности
 
