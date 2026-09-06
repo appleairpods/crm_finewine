@@ -4,12 +4,16 @@
 
 ## Публикация на GitHub Pages
 
-1. Откройте [Settings → Pages](https://github.com/appleairpods/crm_finewine/settings/pages)
-2. В разделе **Build and deployment** выберите Source: **Deploy from a branch**
-3. Branch: **gh-pages** → папка **/ (root)** → Save
-4. После push в `main` GitHub Actions автоматически соберёт и опубликует сайт
+> **Важно:** сборка уже выполнена (ветка `gh-pages`). Нужно один раз включить Pages в настройках.
+
+1. Откройте **[Settings → Pages](https://github.com/appleairpods/crm_finewine/settings/pages)**
+2. **Source:** Deploy from a branch
+3. **Branch:** `gh-pages` → `/ (root)` → **Save**
+4. Через 1–2 минуты сайт будет доступен
 
 **URL:** [https://appleairpods.github.io/crm_finewine/](https://appleairpods.github.io/crm_finewine/)
+
+Подробнее: [PAGES_SETUP.md](PAGES_SETUP.md)
 
 ## Возможности
 
