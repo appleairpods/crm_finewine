@@ -1,0 +1,41 @@
+.success-page {
+  text-align: center;
+  padding-top: 48px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.success-icon {
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.success-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.success-order {
+  font-size: 0.9375rem;
+  margin-bottom: 32px;
+}
+
+.success-order strong {
+  color: var(--gold);
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .success-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

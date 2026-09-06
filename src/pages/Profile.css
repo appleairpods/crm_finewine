@@ -1,0 +1,144 @@
+.profile-empty {
+  text-align: center;
+  padding-top: 48px;
+}
+
+.profile-empty p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.profile-welcome {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.profile-phone {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.loyalty-section {
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.loyalty-section h2 {
+  font-size: 1.125rem;
+  margin-bottom: 16px;
+}
+
+.loyalty-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.loyalty-stat__label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.loyalty-stat__value {
+  font-size: 1.5rem;
+}
+
+.loyalty-tier {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.loyalty-tier--silver { color: #a8a8a8; }
+.loyalty-tier--gold { color: var(--gold); }
+.loyalty-tier--platinum { color: #e8e8f0; }
+
+.loyalty-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.loyalty-next {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.tier-progress {
+  height: 4px;
+  background: var(--bg-secondary);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tier-progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.orders-section .section-title {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.orders-empty {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 32px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-card {
+  padding: 16px;
+}
+
+.order-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-card__id {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.order-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.order-card__items {
+  list-style: none;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}

@@ -1,0 +1,45 @@
+.category-filter {
+  margin-bottom: 20px;
+}
+
+.category-filter__group {
+  margin-bottom: 12px;
+}
+
+.category-filter__scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.category-filter__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-filter__chip {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.category-filter__chip:hover {
+  border-color: var(--gold-dim);
+  color: var(--text-primary);
+}
+
+.category-filter__chip.active {
+  background: rgba(201, 169, 98, 0.12);
+  border-color: var(--gold);
+  color: var(--gold);
+}
