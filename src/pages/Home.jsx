@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { useCart } from '../context/CartContext';
 import ProductCard from '../components/ProductCard';
+import wineCategoryImg from '../assets/categories/wine.jpg';
 import './Home.css';
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
   const featured = products.filter((p) => p.featured && p.stock > 0).slice(0, 4);
 
   const categories = [
-    { key: 'wine', label: t.catalog.wine, filter: { alcohol: 'alcoholic', category: 'wine' } },
+    { key: 'wine', label: t.catalog.wine, image: wineCategoryImg, filter: { alcohol: 'alcoholic', category: 'wine' } },
     { key: 'whisky', label: t.catalog.whisky, filter: { alcohol: 'alcoholic', category: 'whisky' } },
     { key: 'sparkling', label: t.catalog.sparkling, filter: { alcohol: 'alcoholic', category: 'wine', wineType: 'sparkling' } },
     { key: 'nonAlcoholic', label: t.catalog.nonAlcoholic, filter: { alcohol: 'nonAlcoholic' } },
@@ -38,8 +39,15 @@ export default function Home() {
             <Link
               key={cat.key}
               to={`/catalog?alcohol=${cat.filter.alcohol}${cat.filter.category ? `&category=${cat.filter.category}` : ''}${cat.filter.wineType ? `&wineType=${cat.filter.wineType}` : ''}`}
-              className="category-card"
+              className={`category-card${cat.image ? ' category-card--has-image' : ''}`}
             >
+              {cat.image && (
+                <img
+                  src={cat.image}
+                  alt=""
+                  className="category-card__image"
+                />
+              )}
               <span className="category-card__label">{cat.label}</span>
             </Link>
           ))}

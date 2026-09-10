@@ -85,6 +85,15 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(201, 169, 98, 0.08) 0%, transparent 60%);
+  z-index: 1;
+}
+
+.category-card--has-image::before {
+  background: linear-gradient(
+    180deg,
+    transparent 40%,
+    rgba(12, 11, 10, 0.75) 100%
+  );
 }
 
 .category-card:hover {
@@ -92,12 +101,21 @@
   transform: translateY(-2px);
 }
 
+.category-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 78% center;
+}
+
 .category-card__label {
   font-family: var(--font-serif);
   font-size: 1.125rem;
   font-weight: 600;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .product-grid {
