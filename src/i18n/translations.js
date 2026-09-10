@@ -8,7 +8,7 @@ export const ru = {
   home: {
     heroTitle: 'FineWine',
     heroSubtitle: 'Премиальная коллекция вин и спиртных напитков',
-    heroText: 'Отборные позиции со всего мира. Доставка по Москве и самовывоз из бутика на Патриарших.',
+    heroText: 'Отборные позиции со всего мира. Доставка по Иркутску и самовывоз из бутика в Модном квартале.',
     browseCatalog: 'Смотреть каталог',
     featured: 'Избранное',
     categories: 'Категории',
@@ -81,7 +81,7 @@ export const ru = {
     title: 'Оформление заказа',
     deliveryMethod: 'Способ получения',
     pickup: 'Самовывоз',
-    pickupAddress: 'Москва, Большой Патриарший пер., 12',
+    pickupAddress: 'ул. 3 Июля, 25',
     pickupFree: 'Бесплатно',
     delivery: 'Доставка',
     deliveryInfo: '499 ₽ · бесплатно от 5 000 ₽',
@@ -146,7 +146,7 @@ export const ru = {
     toProfile: 'Мои заказы',
   },
   footer: {
-    address: 'Москва, Большой Патриарший пер., 12',
+    address: 'ул. 3 Июля, 25',
     hours: 'Ежедневно 10:00 — 22:00',
     phone: '+7 (495) 123-45-67',
     rights: '© FineWine. Все права защищены.',
@@ -177,7 +177,7 @@ export const en = {
   home: {
     heroTitle: 'FineWine',
     heroSubtitle: 'Premium wines and spirits collection',
-    heroText: 'Curated selections from around the world. Delivery across Moscow and boutique pickup in Patriarch Ponds.',
+    heroText: 'Curated selections from around the world. Delivery across Irkutsk and boutique pickup in Fashion Quarter.',
     browseCatalog: 'Browse catalog',
     featured: 'Featured',
     categories: 'Categories',
@@ -250,7 +250,7 @@ export const en = {
     title: 'Checkout',
     deliveryMethod: 'Delivery method',
     pickup: 'Pickup',
-    pickupAddress: 'Moscow, Bolshoy Patriarshy Lane, 12',
+    pickupAddress: '25, 3 July St., Irkutsk',
     pickupFree: 'Free',
     delivery: 'Delivery',
     deliveryInfo: '499 ₽ · free from 5,000 ₽',
@@ -315,7 +315,7 @@ export const en = {
     toProfile: 'My orders',
   },
   footer: {
-    address: 'Moscow, Bolshoy Patriarshy Lane, 12',
+    address: '25, 3 July St., Irkutsk',
     hours: 'Daily 10:00 AM — 10:00 PM',
     phone: '+7 (495) 123-45-67',
     rights: '© FineWine. All rights reserved.',

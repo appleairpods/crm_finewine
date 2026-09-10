@@ -3,6 +3,9 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { useCart } from '../context/CartContext';
 import ProductCard from '../components/ProductCard';
 import wineCategoryImg from '../assets/categories/wine.jpg';
+import whiskyCategoryImg from '../assets/categories/whisky.jpg';
+import sparklingCategoryImg from '../assets/categories/sparkling.jpg';
+import nonAlcoholicCategoryImg from '../assets/categories/non-alcoholic.jpg';
 import './Home.css';
 
 export default function Home() {
@@ -13,9 +16,9 @@ export default function Home() {
 
   const categories = [
     { key: 'wine', label: t.catalog.wine, image: wineCategoryImg, filter: { alcohol: 'alcoholic', category: 'wine' } },
-    { key: 'whisky', label: t.catalog.whisky, filter: { alcohol: 'alcoholic', category: 'whisky' } },
-    { key: 'sparkling', label: t.catalog.sparkling, filter: { alcohol: 'alcoholic', category: 'wine', wineType: 'sparkling' } },
-    { key: 'nonAlcoholic', label: t.catalog.nonAlcoholic, filter: { alcohol: 'nonAlcoholic' } },
+    { key: 'whisky', label: t.catalog.whisky, image: whiskyCategoryImg, filter: { alcohol: 'alcoholic', category: 'whisky' } },
+    { key: 'sparkling', label: t.catalog.sparkling, image: sparklingCategoryImg, filter: { alcohol: 'alcoholic', category: 'wine', wineType: 'sparkling' } },
+    { key: 'nonAlcoholic', label: t.catalog.nonAlcoholic, image: nonAlcoholicCategoryImg, filter: { alcohol: 'nonAlcoholic' } },
   ];
 
   return (
