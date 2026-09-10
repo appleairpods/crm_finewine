@@ -17,6 +17,13 @@
 
 .product-page__gallery {
   position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.product-page__gallery .product-image,
+.product-page__gallery .product-placeholder {
+  transform: scale(1.3);
 }
 
 .product-page__stock {

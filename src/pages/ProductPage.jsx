@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useLanguage, useLocalized } from '../i18n/LanguageContext';
 import { useCart } from '../context/CartContext';
 import { formatPrice } from '../utils/constants';
-import ProductPlaceholder from '../components/ProductPlaceholder';
+import ProductImage from '../components/ProductImage';
 import './ProductPage.css';
 
 export default function ProductPage() {
@@ -65,7 +65,7 @@ export default function ProductPage() {
 
       <div className="product-page__layout">
         <div className="product-page__gallery">
-          <ProductPlaceholder type={product.imageType} size="lg" />
+          <ProductImage product={product} size="lg" />
           {lowStock && (
             <span className="product-page__stock badge badge-danger">
               {format(t.product.lowStock, { count: product.stock })}

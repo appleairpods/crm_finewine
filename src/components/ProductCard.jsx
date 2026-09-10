@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage, useLocalized } from '../i18n/LanguageContext';
 import { formatPrice } from '../utils/constants';
-import ProductPlaceholder from './ProductPlaceholder';
+import ProductImage from './ProductImage';
 import './ProductCard.css';
 
 export default function ProductCard({ product }) {
@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
   return (
     <Link to={`/product/${product.id}`} className="product-card card">
       <div className="product-card__image">
-        <ProductPlaceholder type={product.imageType} size="md" />
+        <ProductImage product={product} size="md" />
         {lowStock && (
           <span className="product-card__stock badge badge-danger">
             {format(t.product.lowStock, { count: product.stock })}

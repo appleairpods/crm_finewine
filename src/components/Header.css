@@ -110,6 +110,11 @@
   justify-content: center;
 }
 
+.header__nav .header__badge {
+  position: static;
+  flex-shrink: 0;
+}
+
 .hide-mobile {
   display: none;
 }

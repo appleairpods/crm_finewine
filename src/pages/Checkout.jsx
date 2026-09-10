@@ -4,7 +4,7 @@ import { useLanguage, useLocalized } from '../i18n/LanguageContext';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { formatPrice, maskCardNumber, maskExpiry } from '../utils/constants';
-import ProductPlaceholder from '../components/ProductPlaceholder';
+import ProductImage from '../components/ProductImage';
 import './Checkout.css';
 
 export default function Checkout() {
@@ -220,7 +220,7 @@ export default function Checkout() {
           <div className="checkout-items">
             {cartItems.map(({ product, quantity }) => (
               <div key={product.id} className="checkout-item">
-                <ProductPlaceholder type={product.imageType} size="sm" />
+                <ProductImage product={product} size="sm" />
                 <div>
                   <p className="checkout-item__name">{localize(product.name)}</p>
                   <p className="checkout-item__qty">× {quantity}</p>

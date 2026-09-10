@@ -4,7 +4,7 @@ import { useLanguage, useLocalized } from '../i18n/LanguageContext';
 import { useCart } from '../context/CartContext';
 import { useAuth } from '../context/AuthContext';
 import { formatPrice } from '../utils/constants';
-import ProductPlaceholder from '../components/ProductPlaceholder';
+import ProductImage from '../components/ProductImage';
 import './Cart.css';
 
 export default function Cart() {
@@ -60,7 +60,7 @@ export default function Cart() {
           {cartItems.map(({ product, quantity }) => (
             <div key={product.id} className="cart-item card">
               <Link to={`/product/${product.id}`}>
-                <ProductPlaceholder type={product.imageType} size="sm" />
+                <ProductImage product={product} size="sm" />
               </Link>
               <div className="cart-item__info">
                 <Link to={`/product/${product.id}`} className="cart-item__name">
